@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liljoy Beadies</title>
+  <link rel="icon" href="image/Logokecil.png" type="image/png">
+
+  <!--My Style-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Owl Carousel-->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+</head>
+
+<body>
+  <style>
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: cover;
+    }
+  </style>
+  <!-- Navbar start -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-opacity-75 border border-bottom-warning-subtle">
+      <a href="https://www.instagram.com/liljoy.beadies/" class="navbar-brand d-none d-md-inline mt-2 mx-5 px-5"> <img
+          class="img-fluid" src="image/Logo.png" alt="logo" width="120"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" page" href="#myCarousel">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#story">Story</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#products">Straphone</a></li>
+              <li><a class="dropdown-item" href="#products">Beads</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#products">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimoni">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+        <form class="d-flex mx-5 px-5" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!--Navbar End-->
+
+
+  <!-- Carrousel Section start -->
+  <div id="myCarousel" class="carousel carousel-dark slide my-1 py-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img img-fluid" src="image/keychain.jpeg" alt="Produk"
+          style="width: 100%; height: 100%;">
+        <div class="container">
+          <div class="carousel-caption ">
+            <h1 class="fw-bold text-white text-shadow">Spreading joy, 100% made with love💖</h1>
+            <p id="teks-carousel">Temukan keajaiban dengan Little Joy Beadies: Kreasi manik-manik
+              yang menghidupkan hari Anda!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img img-fluid" src="image/gelang1.jpeg" alt="Produk"
+          style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="fw-bold text-white text-shadow">Spreading joy, 100% made with love💖</h1>
+              <p id="teks-carousel">Temukan keajaiban dengan Little Joy Beadies: Kreasi manik-manik
+              yang menghidupkan hari Anda!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img img-fluid" src="image/kalung.jpeg" alt="Produk"
+          style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="fw-bold text-white text-shadow">Spreading joy, 100% made with love💖</h1>
+            <p id="teks-carousel">Temukan keajaiban dengan Little Joy Beadies: Kreasi manik-manik
+              yang menghidupkan hari Anda!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carrousel Section end -->
+
+
+  <!--Our Story Section-->
+  <section id="story">
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img data-aos="zoom-in" src="image/Logo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            width="700" height="500" loading="lazy">
+        </div>
+        <div data-aos="fade-right" class="col-lg-6">
+          <h1 id="spanstory" class="justify-content-center display-4 font-weight-bolder">Our <span>Story</span></h1>
+          <p class="lead">This is not just a story but our passion </p>
+          <p align="justify" >Little Joy Beadies started from an accident that started from the desire to
+            make accessories that are cheap but still aesthetically beautiful, we want to prove that beautiful
+            accessories do not have to be expensive and difficult to obtain, everyone has the right to use and enjoy
+            them. From there, Little Joy Beadies products in the form of handicrafts come in several product variants
+            such as Bracelets, Necklaces, Keychain, Straphone, Rings and other accessories. What we can guarantee is we
+            Spreading joy and 100% made with love.</p>
+           <a href="https://www.instagram.com/liljoy.beadies/"> <button class="btn btn-outline-warning" type="submit">BUY IT!</button></a> 
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!--Our Story Section End-->
+
+
+  <!--Our Products-->
+  <section id="products" class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div data-aos="fade-up" class="col text-center mb-5">
+          <h1  id="spanproducts" class="display-4 font-weight-bolder">Our <span>Products</span></h1>
+          <p class="lead">Make your day better with Liljoy Beadies. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div data-aos="flip-right" class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('image/Cincin.jpeg');">
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+              alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="card-footer">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="image/Logokecil.png" alt="Generic placeholder image"
+                    style="max-width:50px">
+                  <div class="media-body">
+                    <h6 class="my-0 text-white text-shadow d-block">Ring</h6>
+                    <small class="text-white text-shadow">Rp5.000,00.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-right" class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('image/gelang1.jpeg');">
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+              alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="card-footer">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="image/Logokecil.png" alt="Generic placeholder image"
+                    style="max-width:50px">
+                  <div class="media-body">
+                    <h6 class="my-0 text-white text-shadow d-block">Bracelet</h6>
+                    <small class="text-white text-shadow">Rp10.000,00.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-right" class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('image/keychain.jpeg');">
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design"
+              alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+
+              <div class="card-footer">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="image/Logokecil.png" alt="Generic placeholder image"
+                    style="max-width:50px">
+                  <div class="media-body">
+                    <h6 class="my-0 text-white text-shadow d-block">Keychain</h6>
+                    <small class="text-white text-shadow">Rp25.000,00.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('image/kalung.jpeg');">
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+              alt=" Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+
+              <div class="card-footer">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="image/Logokecil.png" alt="Generic placeholder image"
+                    style="max-width:50px">
+                  <div class="media-body">
+                    <h6 class="my-0 text-white text-shadow d-block">Neckles</h6>
+                    <small class="text-white text-shadow">Rp25.000,00.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-right" class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('image/straphone.jpeg');">
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+              alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+
+              <div class="card-footer">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="image/Logokecil.png" alt="Generic placeholder image"
+                    style="max-width:50px">
+                  <div class="media-body">
+                    <h6 class="my-0 text-white text-shadow d-block">Straphone</h6>
+                    <small class="text-white text-shadow">Rp20.000,00.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-right" class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('image/gelang2.jpeg');">
+            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design"
+              alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?">
+            <div class="card-img-overlay d-flex flex-column">
+
+              <div class="card-footer">
+                <div class="media">
+                  <img class="mr-3 rounded-circle" src="image/Logokecil.png" alt="Generic placeholder image"
+                    style="max-width:50px">
+                  <div class="media-body">
+                    <h6 class="my-0 text-white text-shadow d-block">Gelang</h6>
+                    <small class="text-white text-shadow">Rp15.000,00.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--Our Products Section End-->
+
+  <!--Our Testimoni Start-->
+  <section id="testimoni">
+    <div id="myTestimoni" class="col-12 carousel carousel-dark slide my-5 py-5" data-bs-ride="carousel">
+      <div class="carousel-indicators mb-5">
+        <button type="button" data-bs-target="#myTestimoni" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myTestimoni" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myTestimoni" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <h1 data-aos="zoom-in" id="spantestimoni" class="display-4 font-weight-bolder text-center">Our <span>Testimoni</span></h1>
+      <p data-aos="zoom-in" class="lead text-center">Your Happiness is Our Satisfaction.</p>
+      <div data-aos="fade-up" class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div id="card-testi" class="card">
+              <img src="image/img2.jpg" class="card-img-top img-fluid rounded-circle">
+              <h1 class="text-center">Albert</h1>
+              <div class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="card-body">
+                <p align="justify" class="card-text">"I absolutely love my bracelet from Little Joy Beadies! The
+                  craftsmanship is exceptional, and I can't believe how affordable it was. It's quickly become my
+                  favorite accessory, and I've received so many compliments on it. I can't wait to purchase more
+                  pieces!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div id="card-testi" class="card">
+              <img src="image/img3.jpg" class="card-img-top img-fluid rounded-circle">
+                <h1 class="text-center">Jordi</h1>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              <div class="card-body">
+                <p align="justify" class="card-text">"The necklace I bought from Little Joy Beadies is stunning. It's so
+                  beautifully made, and you can tell it's crafted with care and attention to detail. It's amazing how
+                  such a high-quality piece can be so reasonably priced. I'm definitely recommending Little Joy Beadies
+                  to all my friends!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div id="card-testi" class="card">
+              <img src="image/img1.jpg" class="card-img-top img-fluid rounded-circle">
+                <h1 class="text-center">Sisi</h1>
+                <div class="ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              <div class="card-body">
+                <p align="justify" class="card-text">"I recently purchased a keychain and a straphone from Little Joy
+                  Beadies, and I'm thrilled with both items. They're not only stylish but also very durable. The designs
+                  are unique, and I love that they are handmade with love. Little Joy Beadies truly delivers joy through
+                  their beautiful accessories."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myTestimoni" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myTestimoni" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!--Our Testimoni End-->
+
+  <!--Maps-->
+
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <div class="row">
+        <div class="container col-xxl-8 col-sm-12">
+          <div class="row align-items-center">
+            <div data-aos="fade-right" class="col-lg-6">
+              <h1 id="spancontacts" class="text-center justify-content-center display-4 font-weight-bolder">Our
+                <span>Contacts</span></h1>
+              <p class="lead text-center">This is not just a story but our passion </p>
+              <form>
+                <div class="form-row">
+                  <div class="mb-3 form-group col-md-12">
+                    <label for="exampleInputEmail1" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="Name">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="mb-3 form-group col-md-12">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="mb-3 form-group col-md-12">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="mb-3  form-group col-md-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </form>
+            </div>
+          
+          <div data-aos="fade-left" class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Find Us!</h1>
+            <p class="lead">Zidan Zone, Kelurahan Sekaran, Kecamatan Gunungpati, Kota Semarang. Let's Find Us!</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.625709049303!2d110.39498967399905!3d-7.053191292949101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bdea39dbd03%3A0x552c965e098a0d36!2szidanzone%20babyandkids!5e0!3m2!1sen!2sid!4v1717493627004!5m2!1sen!2sid"
+              width="500" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!--Footer-->
+  <div id="footer" class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap" /></svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <a href="https://www.instagram.com/liljoy.beadies/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="mx-3 bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+        </a>
+        <a href="wa.me/081216275203">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg>
+        </a>      
+      </ul>
+    </footer>
+  </div>
+
+  <!--JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!--Js AOS-->
+  <script>
+    AOS.init();
+  </script>
+  <!--Js Active-->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const navLinks = document.querySelectorAll('.nav-item a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Remove .active from all links
+                navLinks.forEach(navLink => navLink.classList.remove('active'));
+
+                // Add .active to the clicked link
+                this.classList.add('active');
+
+                // Smooth scroll to the target section
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const offsetPosition = targetElement.offsetTop - document.querySelector('.navbar').offsetHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>

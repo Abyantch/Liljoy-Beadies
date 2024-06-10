@@ -1,0 +1,315 @@
+//Variabel
+$font-liljoy: "Poppins", sans-serif !important;
+$bg-color: #ffff;
+$shadow: 2px 2px 4px #000000;
+$shadoww: 2px 2px 4px #ffffff;
+$color: (
+    sunny: #ffd900,
+    cloud: #ffff
+);
+$size: (
+    small:16px,
+    medium:24px,
+    large:34px
+);
+
+$dir: left, right;
+
+//Use
+@use 'button';
+
+//Fungsi
+@function menggelap($color, $amount) {
+    @return darken($color, $amount); // Menggunakan fungsi bawaan darken
+}
+
+@function menyala($color, $amount){
+    @return lighten($color, $amount);
+}
+
+//Import
+@import "button";
+
+//Mixin
+@mixin pop-up ($size, $is-failed: false){
+    font-size: $size;
+
+    @if $is-failed {
+        $color: map-get($color, sunny);
+    }
+}
+
+section{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+//Font
+h1{
+    font-family: $font-liljoy;
+}
+
+p{
+    font-size: 12px;
+    font-family: $font-liljoy;
+}
+
+//Navbar
+.navbar{
+    background-color: map-get($color, cloud);
+    border-bottom: 2px solid #f0b506
+}
+
+.text-shadow {
+    text-shadow: $shadow
+  }
+.border-bottom{
+    width: 3px;
+    color: map-get($color, sunny);
+}
+
+.nav-item a {
+    color: #000000 !important;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+    color: map-get($color, sunny) !important;
+}
+
+.nav-item a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid map-get($color, sunny);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.nav-item a:hover::after,
+.nav-item a.active::after {
+    transform: scaleX(0.5);
+}
+
+.nav-item a:active {
+    color: map-get($color, sunny) !important;
+}
+
+
+.navbar-nav{
+    margin-left: 0%;
+}
+
+//Our Story
+.lead p{
+    font-weight: lighter;
+}
+
+#spanstory span{
+    color: map-get($color, sunny);
+}
+
+#story p{
+    font-size: 16px;
+}
+
+//Our Products
+.wrapper{
+    margin-top: 2%;
+}
+
+#button-order{
+    color: $bg-color;
+    font-size: map-get($size, small);
+    font-family: $font-liljoy;
+    justify-content: center;
+    margin: 3%;
+}
+
+#button-order{
+    @include pop-up(16px, $is-failed:true);
+}
+
+#button-order:hover{
+    @include pop-up(8px, $is-failed:false);
+    background-color: darken((map-get($color, sunny)), 2%)!important;
+
+}
+
+.card text{
+    font-size: 10px;
+
+}
+
+.container-img img{
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    border-style:inherit;
+    border-color: map-get($color, sunny);
+    @each $dir in $dir{
+        border-top-#{$dir}-radius: 5%;  
+        }
+    }
+
+#spanproducts span{
+    color: map-get($color, sunny);
+}
+
+#products{  
+    border-radius: 10%;
+}
+
+#products .card{
+    border: none;
+    
+}
+
+
+//Card Styles
+.card{
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow:hidden;
+    border-radius:20px;
+    min-height:350px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+  
+    @media (max-width: 768px) {
+    min-height:350px;
+    }
+  
+    @media (max-width: 420px) {
+    min-height:300px;
+    }
+  
+    &.card-has-bg{
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-size:300%;
+        background-repeat:no-repeat;
+        background-position: center center;
+        object-fit: cover;
+    
+    &:before {
+    content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+    }
+  
+    &:hover {
+        transform: scale(0.98);
+        box-shadow: 0 0 5px -2px rgba(0,0,0,0.3);
+        background-size:220%;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  
+    .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: rgb(171, 171, 171);
+        background: linear-gradient(0deg, rgba(20, 20, 19, 0.5) 0%, rgba(171, 171, 171,0.6) 100%);
+       }
+    }
+  }
+
+    .card-footer{
+        background: none;
+        border-top: none;
+
+    .media{
+       img{
+         border:solid 3px rgba(255,255,255,0.3);
+       }
+     }
+   }
+
+    .card-title{font-weight:800}
+        card-meta{color:rgba(0,0,0,0.3);
+        text-transform:uppercase;
+        font-weight:500;
+        letter-spacing:2px;}
+    .card-body{ 
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    &:hover {
+    .card-body{
+        margin-top:30px;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+     }
+        cursor: pointer;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+  @media (max-width: 767px){
+  }
+
+//Our Testimoni
+#testimoni{
+    margin-top: 7%;
+}
+
+.card-img-top {
+    margin-top: 2%;
+    margin-left: 33%;
+    width: 28%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .card-text{
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+.carousel-item{
+    margin-top: 3%;
+  }
+
+#spantestimoni span{
+    color: map-get($color, sunny);
+}
+
+#card-testi{
+    width: 60%;
+    margin-bottom: 5%;
+}
+.ratings {
+    margin-left: 45%;
+}
+        i{
+    color: map-get($color, sunny) ;
+   }
+
+//Our Contact
+#spancontacts span{
+    color: map-get($color, sunny);
+}
+
+//Carousel
+#teks-carousel{
+    font-size: 16px;
+    color: map-get($color, cloud);
+    font-weight: bold;
+    text-shadow: $shadow;
+    text-align: justify;
+}
+
+#myTestimoni{
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+        

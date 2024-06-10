@@ -1,0 +1,35 @@
+//Variabel
+$font-liljoy: 'Poppins', sans-serif !important;
+$bg-color: #ffff;
+$shadow: 2px 2px 4px #000000;
+$color: (
+    sunny: #ffd900,
+    cloud: #ffff
+);
+$size: (
+    small:16px,
+    medium:24px,
+    large:34px
+);
+
+$dir: left, right;
+
+//Mixin
+@mixin button{
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: menyala((map-get($color, sunny)), 20%)!important;
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    a{
+        font-family: $font-liljoy;
+        font-weight: bold;
+        font-size: map-get($size, small);
+        color: #ffff;
+    }
+}
+
+#button-order{
+    @include button()
+}
