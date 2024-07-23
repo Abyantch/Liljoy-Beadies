@@ -83,7 +83,7 @@ p{
     padding-bottom: 0.2rem;
     border-bottom: 0.1rem solid map-get($color, sunny);
     transform: scaleX(0);
-    transition: 0.2s linear;
+    transition: 0.2s linear;    
 }
 
 .nav-item a:hover::after,
